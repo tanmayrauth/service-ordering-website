@@ -1,0 +1,127 @@
+body{
+  margin:0px;
+  background-color: #f2f2f2;
+}
+
+
+
+.footli ul li {
+    list-style: none;
+}
+
+.footli ul li a {
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.footli hr {
+    border-color: white;
+    margin: 3px 0px 3px 0px;
+}
+
+.social-tabs {
+    margin-left: 40px;
+    text-align: center;
+}
+
+.social-tabs a {
+    margin: 10px 5px 0px 0px;
+}
+
+
+#pagetop{
+     height:90px;
+	 background-color:black;
+}
+#pagetop > #pagetopwrap{
+	width:1000px;
+	height:90px;
+	margin:0px auto;//first is for up and down and next is for hori
+}
+#pagetop > #pagetopwrap> #pagetoplogo{
+	float:left;
+	background-color:green;
+	height:90px;
+	width:100px;
+}
+#pagetop > #pagetopwrap> #pagetoprest{
+	float:left;
+	background-color:grey;
+	height:90px;
+	width:900px;
+}
+
+
+#pagetop > #pagetopwrap> #pagetoprest > #menu1{
+	//here float is not used bcoz stack horizontal is default behaviour
+	height:45px;
+	}
+#pagetop > #pagetopwrap> #pagetoprest > #menu1> div{
+	//here float is not used bcoz stack horizontal is default behaviour
+	height:24px;
+	margin-top:8px;
+	padding :40px;
+}
+#pagetop > #pagetopwrap> #pagetoprest > #menu1> div >a{
+	color:#ccc;
+	textdecoration:none;
+	margin-top:8px;
+	text-align:right;
+	padding :4px;
+}
+
+#pagetop > #pagetopwrap> #pagetoprest > #menu2{
+	//here float is not used bcoz stack horizontal is default behaviour
+	height:45px;
+	}
+#pagetop > #pagetopwrap> #pagetoprest > #menu2> div{
+	//here float is not used bcoz stack horizontal is default behaviour
+	height:24px;
+	margin-top:8px;
+	padding :4px;
+}
+
+
+#pagemiddle{
+	background-color:#f2f2f2;
+	height:900px;
+	width:1000px;
+	margin:0px auto;
+
+}
+#pagebottom{
+	background: #666;
+	padding:24px;
+	font-size:12px;
+	color:#ccc;
+	text-align:center;
+
+
+}
+
+
+  .mytabs {
+      margin-top: 10px;
+      background-color: white;
+      padding:20px;
+  }
+  .mytabs li a {
+      font-size: 1em;
+      border-radius:0px;
+      border-left:5px solid white;
+      color:black;
+  }
+  .mytabs>li.active>a {
+      border-left:5px solid #337ab7;
+  }
+
+  .mytabs li a:hover {
+      background-color:#f3f3f3;
+      border-left: 5px solid #337ab7;
+  }
+
+  .mytabs>hr{
+      margin-top:3px;
+      margin-bottom:3px;
+  }

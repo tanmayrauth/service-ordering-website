@@ -1,0 +1,257 @@
+.header{
+    margin-top:2%;
+    min-height:100px;
+    background-color: white;
+}
+.headtabs ul li a {
+    color:grey;
+}
+.headtabs{
+    margin-right:5%;
+}
+.logo{
+    width:100px;
+    height: 70px    
+}
+.login{
+    background-color:deepskyblue;  
+    color:white !important;
+    padding:0px;
+    width:150px;
+    text-align: center;
+}
+.login:hover{
+    background-color:deepskyblue !important;
+    color:black !important;
+}
+.para1,.para3{
+    background-color: #307eff;
+    padding-bottom:20px;
+}
+.para2{
+    background-color: #307eff;
+}
+.boxl{
+    display:inline-block;
+    background-color: red;
+    width:35%;
+    height:130px;
+    border-radius:5px;
+    margin:0% 0% 0% 13%
+        
+}
+.boxr{
+    display:inline-block;
+    background-color: red;
+    width:35%;
+    height:130px;
+    border-radius:5px;
+    margin:0% 0% 0% 3%
+}
+.boxl:hover{
+    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    border-radius: .375rem;
+    transition: all .3s ease;
+    cursor:pointer;
+}
+
+.boxl a:hover{
+    text-decoration: none !important;
+}
+.boxr a:hover{
+    text-decoration: none !important;
+}
+.boxr:hover{
+        box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    border-radius: .375rem;
+    transition: all .3s ease;
+    cursor:pointer;
+}
+
+.boxl a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
+    -webkit-filter: brightness(50%); 
+}
+
+.boxr a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
+    -webkit-filter: brightness(50%);
+    
+}
+.desc{
+    z-index:2;
+    position:relative;
+    padding-top: 10px;
+    top: -130px;
+    color: #fff !important;
+    font-size:1.7em;
+    left:20px;
+}
+.descb{
+    background-color:grey;
+    border-radius:5px;
+    z-index:2;
+    position:relative;
+    padding-top: 10px;
+    top: -100px;
+    color: #fff !important;
+    font-size:1.3em;
+    left:20px;
+    width:90%;
+    height:50px;
+    text-align:center;
+    line-height:35px;
+    background: rgba(0,0,0, 0.5);
+}
+.para3 h1{
+    color:white;
+    margin-left:10%;
+}
+.partners{
+    margin-left:10%;
+    margin-bottom:5%;
+}
+.partners img{
+    margin-left:2%;
+}
+.flatrow{
+    margin-left:10%;
+}
+.flatbox{
+    background-color:white;
+    width:40%;
+    height:300px;
+    display:inline-block;
+    margin-left:3%;
+    box-shadow: 0 0.3125em 1.25em 0 rgba(46,61,73,.30);
+    
+}
+.fbhead{
+    position:absolute;
+}
+.fbhead img{
+    position:relative;
+    width:100px;
+    height:90px;
+    top:30px;
+    left:-10px
+}
+.fbhead h2{
+    position: relative;
+    display:inline-block;
+    top:40px;
+    left:20px;
+    font-weight:100;
+}
+.fbhead p{
+    position: relative;
+    top:40px;
+    left:130px;
+    width:70%;
+}
+.fbbot{
+    background-color::;#eff4fc;
+    position:relative;
+    top:250px;
+    height:50px;
+    text-align: center;
+}
+.fbbot    a{
+    color:deepskyblue!important;
+    line-height:50px;
+    font-size:1.2em;
+}
+.fbbot  a:hover{
+    color:black !important;
+    text-decoration: none;
+    cursor:pointer;
+}
+.county {
+    min-height: 300px;
+}
+
+.county div {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.county div h4 {
+    color: #e40046;
+    font-weight: 600;
+}
+
+.county div span {
+    color: #e40046;
+    font-size: 3em;
+}
+.countfront {
+    font-weight: bold;
+    font-size: 3em;
+    color: #e40046;
+    text-align: center;
+}
+footer{
+    background-color:#fcfcf7;   
+}
+.asd {
+    background-color: #fcfcf7;
+    padding-top: 30px;
+}
+
+.footli ul li {
+    list-style: none;
+}
+
+.footli ul li a {
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.footli hr {
+    border-color: black;
+    margin: 3px 0px 3px 0px;
+}
+
+.social-tabs {
+    margin-left: 40px;
+    text-align: center;
+}
+
+.social-tabs a {
+    position: relative;
+    top:-30px;
+    margin: 0px;
+    font-size:2em;
+}
+.one div img{
+    margin-left:40px;
+    margin-top:20px;
+    height:100px;
+    width:100px;
+        
+}
+.one{
+    display:block;
+    border:1px solid black;
+    margin-bottom:3%;
+}
+.services{
+    display:block;
+    min-height:1000px;
+}
+.pl{
+    margin-left:5%;
+    width:90%;
+}
+.servdes h3 a:hover{
+    cursor:pointer;
+    text-decoration: none;
+}
+}

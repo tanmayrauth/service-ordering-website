@@ -1,0 +1,578 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./project.css">
+    <!-- social -->
+    <link rel="stylesheet" href="./css/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- magnify -->
+    <link rel="stylesheet" href="./css/bootstrap-magnify.css">
+    <script src="./js/bootstrap-magnify.js"></script>
+    <!-- star -->
+    <link href="./css/star-rating1.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="./js/star-rating.js" type="text/javascript"></script>
+    <!-- slider -->
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- check -->
+    <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+    <script src="js/bootstrap-slider.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script>
+        $(document).on('ready', function () {
+            
+            $("#ex2").slider({});
+            $(".heart").hover(function () {
+                $(this).removeClass('glyphicon glyphicon-heart-empty');
+                $(this).addClass('fa fa-heart');
+            }, function () {
+                if (!$(this).hasClass('clicked')) {
+                    $(this).removeClass('fa fa-heart');
+                    $(this).addClass('glyphicon glyphicon-heart-empty');
+                }
+            });
+            
+            $(".heart").click(function () {
+                $(this).toggleClass('clicked');
+            });
+            
+            $(".heart1").hover(function () {
+                $(this).removeClass('glyphicon glyphicon-heart-empty');
+                $(this).addClass('fa fa-heart');
+            }, function () {
+                if (!$(this).hasClass('clicked')) {
+                    $(this).removeClass('fa fa-heart');
+                    $(this).addClass('glyphicon glyphicon-heart-empty');
+                }
+            });
+            
+            $(".heart1").click(function () {
+                $(this).toggleClass('clicked');
+            });
+            $(".ad-box").hover(function () {
+                $(this).find(".heart").css('visibility', 'visible');
+            }, function () {
+                if (!$(this).find(".heart").hasClass('clicked')) {
+                    $(this).find(".heart").css('visibility', 'hidden');
+                }
+            });
+            var c1 = $('.mainimg').attr('src');
+            $(".lh").hover(function () {
+                var c2 = $(this).find("img").attr('src');
+                $('.mainimg').attr('src', c2);
+            });
+            $(".lh").click(function () {
+                $(this).removeClass('clicked');
+                $(this).addClass('clicked');
+                $(this).toggleClass('ns');
+            });
+        });
+    </script>
+    <style>
+        
+        .lh:active{
+            border:none;
+            background: none;
+        } 
+        .lh img{
+            border:1px solid grey;
+        }
+        .filele h3 small {
+            font-weight: 500;
+            color: #969696;
+        }
+        
+        .langu label {
+            margin-right: 5px;
+        }
+        
+        .langu label input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="padding:0px;">
+        <div class="row">
+            <div class="col-sm-12" style="padding:0px">
+                <nav class="navbar navbar-default n1">
+                    <div class="container-fluid" style="padding: 0px 0px 0px 0px;margin-bottom:0px">
+                        <div class="col-sm-4">
+                            <p style="font-size:0.9em;font-family:sans-serif;padding:3px 0px 0px 50px;margin-bottom:0px;color:white">India's Fastest Book Selling Destination</p>
+                        </div>
+                        <div class="col-sm-4 pull-right">
+                            <ul class=" nav navbar-nav navbar-right">
+                                <li><a href="#" style="padding:0px 40px 10px 0px;color:white;font-size:0.9em"><span class="glyphicon glyphicon-info-sign" style="padding-right:5px;color:white"></span>Help Centre</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-default n2">
+            <div class="container-fluid" style="padding-left:35px;">
+                <div class="col-sm-4">
+                    <ul class="nav navbar-nav navbar-left kar">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" style="padding-right:3px;"></span>Categories</a>
+                            <ul class="dropdown-menu multi-column columns-3">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <ul class="multi-column-dropdown">
+                                            <li><a href="#">Action and Adventure</a></li>
+                                            <li><a href="#">Anthology</a></li>
+                                            <li><a href="#">Art</a></li>
+                                            <li><a href="#">Autobiographies</a></li>
+                                            <li><a href="#">Biographies</a></li>
+                                            <li><a href="#">Children's</a></li>
+                                            <li><a href="#">Comics</a></li>
+                                            <li><a href="#">Cookbooks</a></li>
+                                            <li><a href="#">Diaries</a></li>
+                                            <li><a href="#">Dictionaries</a></li>
+                                            <li><a href="#">Drama</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <ul class="multi-column-dropdown">
+                                            <li><a href="#">Encyclopedias</a></li>
+                                            <li><a href="#">Fantasy</a></li>
+                                            <li><a href="#">Guide</a></li>
+                                            <li><a href="#">Health</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Horror</a></li>
+                                            <li><a href="#">Journals</a></li>
+                                            <li><a href="#">Math</a></li>
+                                            <li><a href="#">Mystery</a></li>
+                                            <li><a href="#">Poetry</a></li>
+                                            <li><a href="#">Prayer books</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <ul class="multi-column-dropdown">
+                                            <li><a href="#">Religion, Spirituality &amp; New Age</a></li>
+                                            <li><a href="#">Romance</a></li>
+                                            <li><a href="#">Satire</a></li>
+                                            <li><a href="#">Science</a></li>
+                                            <li><a href="#">Science Fiction</a></li>
+                                            <li><a href="#">Self help</a></li>
+                                            <li><a href="#">Series</a></li>
+                                            <li><a href="#">Travel</a></li>
+                                            <li><a href="#">Trilogy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                            <!-- 
+                    <ul class="dropdown-menu" style="width:100%;">
+                      <li><a href="#">Action and Adventure</a></li>
+                      <li><a href="#">Anthology</a></li>
+                      <li><a href="#">Art</a></li>
+                        <li><a href="#">Autobiographies</a></li>
+                        <li><a href="#">Biographies</a></li>
+                        <li><a href="#">Children's</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Cookbooks</a></li>
+                        <li><a href="#">Diaries</a></li>
+                        <li><a href="#">Dictionaries</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Encyclopedias</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Guide</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Journals</a></li>
+                        <li><a href="#">Math</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Prayer books</a></li>
+                        <li><a href="#">Religion, Spirituality &amp; New Age</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Satire</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Science fiction</a></li>
+                        <li><a href="#">Self help</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Trilogy</a></li>
+                    </ul>
+                    -->
+                        </li>
+                        <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-fire" style="color:white;padding-right:3px;"></span>Trending</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="main-search" style="position:relative;left:-5%;margin:5px 170px 0px 0px;">
+                        <button class="btn btn-primary" type="submit" style="float:right;width:100px;height:40px;border-right-radius:1px;background-color:#3d3b3b;"><span class="glyphicon glyphicon-search"></span></button>
+                        <div style="overflow:hidden;">
+                            <input type="text" class="form-control" placeholder="Search...." name="kyu" style="border-radius:0px;height:40px;"> </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="nav navbar-nav kar">
+                        <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-user" style="color:white;"></span> Sign Up</a></li>
+                        <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-log-in" style="color:white;"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <hr style="margin-botton:0px;">
+            <h4 style="padding:0px 0px 0px 0px"><small class="fb" ><a> Engineering </a>/<a> SEM 5 </a>/ Techmax-SOOAD</small></h4>
+            <hr style="margin-top:0px;"> </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1" style="background:white;">
+            <!-- filters -->
+            <div class="col-sm-3" style=";background:white;border-right:1px solid #ededed;">
+                <div class="row filele" style="margin:25px 0px 5px 0px;">
+                    <h3 style="margin:10px 0px 0px 10px;"><small>Price</small></h3> </div>
+                <hr style="margin:0px;">
+                <div class="row" style="position:relative;left:10%;margin-top:20px;"> <span class="fa fa-inr" style="padding-right:3px;"></span><b>0</b>
+                    <div class="slider slider-horizontal" style="width:60%;padding:0px 10px 0px 10px;">
+                        <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="10000" data-slider-step="5" data-slider-value="[100,10000]"> </div><span class="fa fa-inr"></span><b>10000</b> </div>
+                <div class="row filele" style="margin:25px 0px 5px 0px;">
+                    <h3 style="margin:10px 0px 0px 10px;"><small>Language</small></h3> </div>
+                <hr style="margin:0px;">
+                <div class="langu row" style="margin:0px 10px 0px 10px;">
+                    <div class="col-sm-6">
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>English</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Hindi</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Marathi</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Gujrati</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Urdu</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Mandarin</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row filele" style="margin:25px 0px 5px 0px;">
+                    <h3 style="margin:10px 0px 0px 10px;"><small>Semesters</small></h3> </div>
+                <hr style="margin:0px;">
+                <div class="Semesters row" style="margin:0px 10px 0px 10px">
+                    <div class="col-sm-6">
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 1</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 2</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 3</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 4</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 5</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 6</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 7</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                            <input type="checkbox" value="">
+                            <label>Sem 8</label>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin:0px 0px 20px;">
+                <div class="college" style="margin:0px 10px 0px 10px">
+                    <label for="sel1">Sort Sellers By College:</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <!-- filter end -->
+            <div class="col-sm-9">
+                <div class="row" style="height:100px;">
+                    <p style="margin:10px 0px 0px 10px"><span style="white-space:nowrap;font-size:1.6em;">Enigneering Semester 5</span> <span style="padding:0px 0px 0px 0px;margin:20px 0px 0px 10px;font-size:1.2em;"><small>(510 items)</small></span> </p>
+                    <hr> </div>
+                <!-- grid start -->
+                <div class="latest-ads-grid-holder">
+                    <div class="ad-box span3 latest-posts-grid first">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg1.png">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">	
+				    			</span> <a href="#">Puma Pluto Grey Dp Shoes</a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box span3 latest-posts-grid first">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg3.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">	
+				    			</span> <a href="#">Personnel and Human Resource Management</a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box span3 latest-posts-grid first">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg2.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">							
+				    			</span> <a href="#">Personnel and Human Resource Management</a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box span3 latest-posts-grid first">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg4.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">		
+				    			</span> <a href="#">Personnel and Human Resource Management</a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg3.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">		
+				    			</span> <a href="#">Personnel and Human Resource Management  </a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg2.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">		
+				    			</span> <a href="#">Personnel and Human Resource Management  </a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg1.png">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">		
+				    			</span> <a href="#">Personnel and Human Resource Management  </a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <a class="ad-image" href="#"> <img class="add-box-main-image" src="bg4.jpg">
+                            <div class="imgDescription">
+                                <ul>
+                                    <li>Genuine Skin</li>
+                                    <li>Nvidia Geforce&copy;</li>
+                                </ul>
+                                <div class="divbut">
+                                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Quick View</button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ad-box-content"> <span class="ad-category">		
+				    			</span> <a href="#">Personnel and Human Resource Management  </a>
+                            <div class="add-price"><span style="margin-left:5px;">Rs 200</span><span class="glyphicon glyphicon-heart-empty heart" style="position:absolute;top:70px;right:4px;font-size:25px;"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog  modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header" style="border:none;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-sm-6 leftdiv">
+                                    <div class="col-sm-3 leftpanel">
+                                        <a class="lh"><img src="bg1.png"></a>
+                                        <a class="lh"><img src="bg2.jpg"></a>
+                                        <a class="lh"><img src="bg3.jpg"></a>
+                                        <a class="lh"><img src="bg4.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-9"> <img class="mainimg" data-toggle="magnify" src="shoe.jpg" style="border:none"><span class="glyphicon glyphicon-heart-empty heart1" style="position:absolute;top:10px;right:0px;font-size:25px;"></span> </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="phead" style="margin-top:40px;">
+                                        <h3 style="padding-top:0px;margin-top:0px;">Puma Pluto Grey Dp Shoes</h3> <span class="glyphicon glyphicon-map-marker" style="padding-right:7px;color:#ed615e"></span><span style="color:grey;padding-right:4px;font-size:1.1em;"><small>Mumbai, Maharashtra</small></span><span style="padding-right:4px;color:grey">|</span><span class="glyphicon glyphicon-phone" style="padding-right:7px;color:#647061"></span><span style="color:grey;padding-right:4px;font-size:1.1em;"><small>9765824123</small></span> </div>
+                                    <hr style="padding-top:0px;margin-top:0px;margin-bottom:0px;">
+                                    <div class="pcont row" style="margin-bottom:0px;">
+                                        <h3 style="padding:0px 0px 0px 20px;margin-top:0px;"><small>Product Details</small></h3>
+                                        <div class="row" style="margin-bottom:40px;">
+                                            <div class="col-sm-7">
+                                                <div>
+                                                    <ol style="list-style-type:disc;color:grey; font-size:1.2em">
+                                                        <li>asdasdasdasdsadasdsad</li>
+                                                        <li>asdasdasdasdsadasdsad</li>
+                                                        <li>asdasdasdasdsadasdsad</li>
+                                                        <li>asdasdasdasdsadasdsad</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-left:40px;margin-top:0px;padding-top:0px;">
+                                        <button type="button" class="b1m"><span class="	glyphicon glyphicon-shopping-cart" style="color:white;padding-right:10px;font-size:1em;padding-top:0px;margin-top:0px;"></span><span style="font-size:1.2em">Enquire Now</span></button>
+                                        <button type="button" class="b2m"><span class="glyphicon glyphicon-info-sign" style="color:white;padding-right:10px;font-size:1em;padding-top:0px;margin-top:0px;"></span><span style="font-size:1.2em">More Details</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end -->
+                <div class="row" style="margin:100px 0px 0px 20px;">
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next<span class="glyphicon glyphicon-menu-right" style="padding-left:5px;margin-top:1px;"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-sm-12 asd">
+            <div class="col-sm-5" style="position:relative;left:5%;">
+                <a href="#"><img style="height:70px; width:150px;" src="backnew.jpg"></a>
+                <div class="footverti"></div>
+                <div class="foottag">BUY.
+                    <br>SELL.
+                    <br>WHATEVER.</div>
+                <p style="font-size:1.5em;color:white;padding-top:10px;">Over <b>1,00,000</b> unique customers last month</p>
+                <p style="color:white;font-size:1.1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum gravida ante,</p>
+            </div>
+            <div class="col-sm-2 footli">
+                <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <hr>
+                    <li><a href="#">Featured Ads</a></li>
+                    <hr>
+                    <li><a href="#">Locations Map</a></li>
+                    <hr>
+                    <li><a href="#">Popular Searches</a></li>
+                    <hr> </ul>
+            </div>
+            <div class="col-sm-2 footli">
+                <ul>
+                    <li><a href="#">Terms of Use </a></li>
+                    <hr>
+                    <li><a href="#">Help &amp; Contact Us</a></li>
+                    <hr> </ul>
+            </div>
+            <div class="col-sm-2 social-tabs">
+                <p style="color:white;font-size:1.2em;text-align:center;">JOIN US TODAY</p>
+                <a class="btn btn-social-icon btn-google"> <span class="fa fa-google"></span> </a>
+                <a class="btn btn-social-icon btn-reddit"> <span class="fa fa-reddit"></span> </a>
+                <a class="btn btn-social-icon btn-facebook"> <span class="fa fa-facebook"></span> </a>
+                <a class="btn btn-social-icon btn-instagram"> <span class="fa fa-instagram"></span> </a>
+                <br>
+                <a class="btn btn-social-icon btn-twitter"> <span class="fa fa-twitter"></span> </a>
+                <a class="btn btn-social-icon btn-pinterest"> <span class="fa fa-pinterest"></span> </a>
+                <a class="btn btn-social-icon btn-tumblr"> <span class="fa fa-tumblr"></span> </a>
+            </div>
+        </div>
+    </footer>
+</body>
